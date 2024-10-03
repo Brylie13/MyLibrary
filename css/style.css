@@ -1,9 +1,9 @@
 :root {
-  --primary-color: rgb(241, 241, 241);
+  --primary-color: rgb(75, 174, 207);
   --secondary-color: orange;
   --tertiary-color: white;
-  --primary-bg-color: rgba(241, 241, 241, 0.508);
-  --secondary-bg-color: rgb(58, 147, 206);
+  --primary-bg-color: rgba(116, 226, 226, 0.508);
+  --secondary-bg-color: rgb(51, 117, 145);
   --tertiary-bg-color: rgb(169, 65, 65);
 }
 
@@ -17,14 +17,14 @@
 
 footer p {
   font-size: 1.2rem;
-  color: yellowgreen;
+  color: rgb(17, 18, 18);
 }
 img {
   width: 65px;
 }
 
 #hearts {
-  color: rgb(255, 187, 0);
+  color: rgb(127, 15, 19);
   font-size: 1.3rem;
 }
 
@@ -103,7 +103,7 @@ header li {
 }
 
 header a {
-  color: white;
+  color: rgb(16, 15, 15);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -114,8 +114,8 @@ header a:hover {
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: rgb(51, 117, 145);
+  color: rgb(12, 12, 12);
   padding: 10px;
   text-align: center;
   position: fixed;
@@ -129,7 +129,7 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: rgb(26, 24, 24);
   text-decoration: none;
 }
 
@@ -155,7 +155,7 @@ footer a {
 }
 
 .heading {
-  box-shadow: 0px 1px 1px rgb(103, 97, 82);
+  box-shadow: 0px 1px 1px rgb(16, 76, 91);
   padding: 10px;
   text-align: center;
   color: rgb(230, 3, 230);
@@ -185,7 +185,7 @@ footer a {
   /* color: maroon; Set color for tooltip text */
   /* cursor: help; Change cursor to indicate tooltip */
   &:hover {
-    color: olive;
+    color: rgb(75, 75, 22);
     /* border-radius: 8px; */
     /* width: max-content; */
     /* padding: 1px; */
@@ -404,7 +404,7 @@ p.tooltip:hover::after {
   font-size: 1.7rem;
 }
 .welcome-intro p {
-  color: darkgreen;
+  color: rgb(103, 184, 103);
   font-size: 1.3rem;
 }
 .welcome-intro ul {

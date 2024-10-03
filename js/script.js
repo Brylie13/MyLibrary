@@ -4,22 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const MAX_FILES = 1;
 
   const folderStructure = {
-    မူလတန်း: {
-      Grammar: ["lesson.html", "recording.html", "quiz.html"],
-      Sangaha: ["သင်္ဂြိုဟ်.html", "သရုပ်ခွဲ.html", "ညဝါ.html", "recording.html", "quiz.html"],
-      Readings: ["lesson.html", "recording.html", "quiz.html"],
-    },
-    သီလက္ခန်: {
-      book2a: ["lesson.html", "recording.html", "quiz.html"],
-      book2b: ["lesson.html", "recording.html", "quiz.html"],
-    },
-    ပထမဆင့်: {
-      Grammar: ["lesson.html", "recording.html", "quiz.html"],
-      Sangaha: ["သင်္ဂြိုဟ်.html", "ညဝါ.html", "recording.html", "quiz.html"],
-      ဓမ္မပဒ: ["lesson.html", "recording.html", "quiz.html"],
-      အင်္ဂုတ္တိုရ်: ["lesson.html", "recording.html", "quiz.html"],
-      မဟာဝါ: ["lesson.html", "recording.html", "quiz.html"],
-    },
     Front_End: {
       M01_HTML_CSS_Git: [
         "01-HTML.html",
@@ -102,10 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "projectRecording.html",
         "projectQuiz.html",
       ],
-    },
-    PBC: {
-      lists: ["index.html", "lesson.html", "quiz.html", "recording.html"],
-      book2b: ["lesson.html", "quiz.html", "recording.html"],
     },
   };
 

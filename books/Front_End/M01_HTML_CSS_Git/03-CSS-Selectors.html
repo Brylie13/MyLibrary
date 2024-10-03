@@ -1,57 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Recordings</title>
-    <link rel="stylesheet" href="../../../css/recording.css" />
-  </head>
-  <body>
-    <header>
-      <h1>My Recordings</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <link rel="stylesheet" href="css/selectors.css">
+</head>
+
+<body>
+    <header class="fade-background">
+        <h1 class="student">Student Bio</h1>
     </header>
 
     <main>
-      <div class="video-player">
-        <video id="main-video" controls>
-          <source
-            src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+        <section>
+            <h2>About Me</h2>
+            <figure class="figure" >
+                <img src="images/brylie.jpg" alt="placeholder image with text reading 200 width 200 height" width="100%">
+                <figcaption>Student image</figcaption>
+            </figure>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, alias!</p>
+        </section>
 
-      <div class="video-list">
-        <div
-          class="video-thumbnail"
-          data-video-src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
-        >
-          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
-          <p>Video 1</p>
-        </div>
-        <div
-          class="video-thumbnail"
-          data-video-src="../../../recordings/SampleVideo_1280x720_5mb.mp4"
-        >
-          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
-          <p>Video 2</p>
-        </div>
-        <div
-          class="video-thumbnail"
-          data-video-src="../../../recordings/SampleVideo_1280x720_1mb.mp4"
-        >
-          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
-          <p>Video 3</p>
-        </div>
-        <!-- <div class="video-thumbnail" data-video-src="video2.mp4">
-          <img src="../../../images/plant2.png" alt="Video 2" />
-          <p>Video 4</p>
-        </div> -->
-        <!-- Add more thumbnails as needed -->
-      </div>
+        <section class="section">
+            <h2 class="contact">Contact Information</h2>
+            <ul>
+                <li><strong>Email;</strong><a href="#">mmyat3327@gmail.com</a></li>
+                <li><strong>GitHub;</strong><a href="#">https://github.com/Brylie13/MyLibrary.git</a></li>
+                <li><strong>Portfolio;</strong><a href="#">coming.soon</a></li>
+            </ul>
+            <br>
+        </section>    
     </main>
 
-    <script src="../../../js/recording.js"></script>
-  </body>
+    <footer class="fade-background">
+        <p >© 2022 Student Bio Productions</p>
+    </footer>
+</body>
 </html>
