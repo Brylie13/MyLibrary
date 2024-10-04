@@ -7,24 +7,45 @@ let score = 0;
 // Example questions array
 let questions = [
   {
-    question: "What is the capital of France?",
-    options: ["Paris", "Berlin", "Rome", "Madrid"],
-    answer: "Paris",
+    question: "Constructor function သုံးပြီး object တစ်ခုကို ဘယ်လို ဖန်တီးမလဲ?",
+    options: ["A)let obj = constructor()", 
+              "B)let obj = new ConstructorFunction()", 
+              "C)let obj = Object.create(ConstructorFunction)"],
+    answer: "B)let obj = new ConstructorFunction()",
   },
   {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Mars", "Earth", "Jupiter", "Saturn"],
-    answer: "Mars",
+    question: "How do you create an object in JavaScript?",
+    options: ["A)var obj = {};",
+              "B)var obj = Object.create();",
+              "C)var obj = new Object();>"],
+    answer: "A)var obj = {};",
   },
   {
-    question: "What is the largest ocean on Earth?",
+    question: "Array.prototype.map() method ရဲ့ အလုပ်လုပ်ပုံက ဘာလဲ?",
     options: [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Pacific Ocean",
+      "A)Original array ကို ပြောင်းလဲသည်",
+      "B)Array အတွင်းရှိ element တစ်ခုချင်းစီအပေါ် function ကို ခေါ်ပြီး ရလာတဲ့ result တွေနဲ့ အသစ်သော array တစ်ခုကို ဖန်တီးသည်",
+      "C) Array အတွင်းရှိ element တွေကို ဖယ်ရှားသည်",
     ],
-    answer: "Pacific Ocean",
+    answer: "B)Array အတွင်းရှိ element တစ်ခုချင်းစီအပေါ် function ကို ခေါ်ပြီး ရလာတဲ့ result တွေနဲ့ အသစ်သော array တစ်ခုကို ဖန်တီးသည်",
+  },
+  {
+    question: "Array.isArray([]) ကို ခေါ်သုံးမည်ဆိုရင် ဘာဖြစ်မလဲ?",
+    options: [
+      "A)true",
+      "B)false",
+      "C)undefined",
+    ],
+    answer: "A)true",
+  },
+  {
+    question: "JavaScript မှာ arrow function တစ်ခုကို ဘယ်လို ကြေညာမလဲ?",
+    options: [
+      "A)function myFunc() => {}",
+      "B)let myFunc = () => {}",
+      "C)myFunc = {} => {}",
+    ],
+    answer: "B)let myFunc = () => {}",
   },
 ];
 
