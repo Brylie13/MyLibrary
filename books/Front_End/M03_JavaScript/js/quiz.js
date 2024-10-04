@@ -43,9 +43,9 @@ let questions = [
     options: [
       "A)function myFunc() => {}",
       "B)let myFunc = () => {}",
-      "C)myFunc = {} => {}",
+      "C)link",
     ],
-    answer: "B)let myFunc = () => {}",
+    answer: "B)herf",
   },
 ];
 

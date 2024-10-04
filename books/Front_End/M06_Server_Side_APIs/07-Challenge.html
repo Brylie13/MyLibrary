@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./css/challenge.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+        <section class="search-container">
+            <form id="search-form">
+                <input type="text" id="city-name" placeholder="Enter city name" required />
+                <button type="submit">Search</button>
+            </form>
+            <div id="history"></div>
+        </section>
+        <section id="weather-info">
+            <div id="current-weather"></div>
+            <div id="forecast-weather"></div>
+        </section>
+    </div>
+    <script src="./js/challenge.js"></script>
+</body>
+</html>
