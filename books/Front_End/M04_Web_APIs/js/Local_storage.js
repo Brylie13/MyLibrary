@@ -1,18 +1,28 @@
-var fN = document.querySelector("#first-name");
-var lN = document.querySelector("#last-name");
-var email = document.querySelector("#email");
-var pw = document.querySelector("#password");
-var su = document.querySelector("#sign-up");
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form from submitting
 
-su.addEventListener("click", function (e) {
-  e.preventDefault();
+  // Get form data
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const gender = document.getElementById("gender").value;
+  const birthdate = document.getElementById("birthdate").value;
 
-  var user = {
-    firstN: fN.value.trim(),
-    lastN: lN.value.trim(),
-    email: email.value.trim(),
-    password: pw.value.trim(),
+  // Create user object
+  const user = {
+      username: username,
+      email: email,
+      password: password,
+      gender: gender,
+      birthdate: birthdate
   };
 
-  localStorage.setItem("Student", JSON.stringify(user));
+  // Save user data to local storage
+  localStorage.setItem("user", JSON.stringify(user));
+
+  // Display success message
+  document.getElementById("successMsg").textContent = "Registration successful! Data stored in local storage.";
+  
+  // Clear form inputs
+  document.getElementById("registerForm").reset();
 });
