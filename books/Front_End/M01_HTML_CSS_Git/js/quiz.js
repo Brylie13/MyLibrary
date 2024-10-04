@@ -68,11 +68,11 @@ let questions = [
   {
     question: "What is the purpose of the git pull command?",
     options: [
-      "A) Pushes changes to a remote repository" ,
-      "B) Fetches and merges changes from a remote repository",
-      "C) Deletes a remote repository",
+      "A)Pushes changes to a remote repository" ,
+      "B)Fetches and merges changes from a remote repository",
+      "C)Deletes a remote repository",
     ],
-    answer: " B) Fetches and merges changes from a remote repository",
+    answer: " B)Fetches and merges changes from a remote repository",
   },
   {
     question: "How do you make text bold in HTML?",

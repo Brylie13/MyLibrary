@@ -7,24 +7,91 @@ let score = 0;
 // Example questions array
 let questions = [
   {
-    question: "What is the capital of France?",
-    options: ["Paris", "Berlin", "Rome", "Madrid"],
-    answer: "Paris",
+    question: "Which value of the position property will make an element stay in the same place when scrolling?",
+    options: ["A)static", 
+              "B)absolute", 
+              "C)fixed"],
+    answer: "C)fixed",
   },
   {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Mars", "Earth", "Jupiter", "Saturn"],
-    answer: "Mars",
+    question: "Which of the following is a valid media query for screens larger than 768px?",
+    options: ["A)@media (max-width: 768px)",
+              "B)@media (min-width: 768px)",
+              "C)@media (screen-width: 768px)"
+            ],
+    answer: "B)@media (min-width: 768px)",
   },
   {
-    question: "What is the largest ocean on Earth?",
+    question: "What is the primary purpose of wireframing in web design?",
     options: [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Pacific Ocean",
+      "A) Creating a detailed design for the final website",
+      "B)Defining the structure and layout of a webpage without focusing on design elements",
+      "C)Writing CSS code for the design of a webpage",
     ],
-    answer: "Pacific Ocean",
+    answer: "B) Defining the structure and layout of a webpage without focusing on design elements",
+  },
+  {
+    question: "What does the justify-content property in a flexbox do?",
+    options: [
+      "A)Aligns items horizontally",
+      "B)Aligns items vertically",
+      "C)Controls the space distribution between items",
+    ],
+    answer: "C)Controls the space distribution between items",
+  },
+  {
+    question: "What is the purpose of a CSS pseudo-class?",
+    options: [
+      "A)To add special effects to an element",
+      "B)To style an element based on its state or interaction (like :hover or :active)",
+      "C)To define variables in CSS",
+    ],
+    answer: "B)To style an element based on its state or interaction (like :hover or :active)",
+  },
+  {
+    question: "What does the align-items property control in a flexbox layout?",
+    options: [
+      "A)Horizontal alignment of items",
+      "B)Vertical alignment of items",
+      "C)Spacing between items",
+    ],
+    answer: " B) Vertical alignment of items",
+  },
+  {
+    question: "Which pseudo-class would you use to style an input field when it is in focus?",
+    options: [
+      "A):hover",
+      "B):focus",
+      "C):checked",
+    ],
+    answer: "B):focus",
+  },
+  {
+    question: "Which of the following is a valid use of the CSS flex-direction property?",
+    options: [
+      "A)flex-flow: row",
+      "B)flex-direction: column-reverse",
+      "C)flex-direction: grid",
+    ],
+    answer: " B)flex-direction: column-reverse",
+  },
+  {
+    question: "Which CSS property is used to define the gap between rows in a grid layout?",
+    options: [
+      "A)row-gap",
+      "B)grid-gap",
+      "C)line-gap",
+    ],
+    answer: "A)row-gap",
+  },
+  {
+    question: "What does the :first-of-type pseudo-class do?",
+    options: [
+      "A)Targets the first element of any type in the document",
+      "B)Targets the first child element of a specific type within its parent",
+      "C)Selects the first element of a certain type regardless of its parent",
+    ],
+    answer: "B)Targets the first child element of a specific type within its parent",
   },
 ];
 
