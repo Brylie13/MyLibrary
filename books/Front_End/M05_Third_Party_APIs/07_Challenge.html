@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Work Day Scheduler">
+    <title>Work Day Scheduler</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/challenge.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Brylie's DailyScheduler</h1>
+        <div id="currentDay" class="text-center mb-3"></div>
+        
+        <!-- Timeblocks for each hour of the day -->
+        <div id="hour-9" class="row time-block">
+            <div class="col-2 hour text-center py-3">7AM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-10" class="row time-block">
+            <div class="col-2 hour text-center py-3">10AM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-11" class="row time-block">
+            <div class="col-2 hour text-center py-3">12PM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-12" class="row time-block">
+            <div class="col-2 hour text-center py-3">3PM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-1" class="row time-block">
+            <div class="col-2 hour text-center py-3">6PM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-2" class="row time-block">
+            <div class="col-2 hour text-center py-3">8PM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-3" class="row time-block">
+            <div class="col-2 hour text-center py-3">12AM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-4" class="row time-block">
+            <div class="col-2 hour text-center py-3">4PM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+        <div id="hour-5" class="row time-block">
+            <div class="col-2 hour text-center py-3">5PM</div>
+            <textarea class="col-8 description"></textarea>
+            <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
+        </div>
+
+    </div>
+
+    <!-- jQuery and Moment.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/challenge.js"></script>
+</body>
+</html>
