@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server-Side APIs and Basic Algorithms - README.md</title>
+</head>
+<body>
+
+<h1>Server-Side APIs and Basic Algorithms</h1>
+
+<p>
+    This project explains basic tasks using <strong>Server-Side APIs</strong> such as fetching data from an API, 
+    parsing JSON, and deconstructing parameters. It also covers some basic algorithms like <strong>isPalindrome</strong>, 
+    <strong>factorial</strong>, and <strong>titleCase</strong>. The explanations are kept simple, and the examples 
+    are written in HTML for easier understanding.
+</p>
+
+<h2>Contents Overview</h2>
+<ul>
+    <li><a href="#create-fetch">Create Fetch Request</a></li>
+    <li><a href="#parse-json">Parse JSON</a></li>
+    <li><a href="#demo-dynamic">Demo Dynamic Fetch</a></li>
+    <li><a href="#deconstruct-parameters">Deconstruct Parameters</a></li>
+    <li><a href="#fetch-github-issues">Fetch GitHub Issues</a></li>
+    <li><a href="#ispalindrome">isPalindrome Algorithm</a></li>
+    <li><a href="#factorial">Factorial Algorithm</a></li>
+    <li><a href="#titlecase">titleCase Algorithm</a></li>
+</ul>
+
+<h2 id="create-fetch">Create Fetch Request</h2>
+<p>
+    The <strong>fetch</strong> API is used to get data from a server. It sends a request to a URL and waits for a response.
+    Here’s a simple fetch request example to retrieve data:
+</p>
+<pre>
+<code>
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+</code>
+</pre>
+
+<h2 id="parse-json">Parse JSON</h2>
+<p>
+    <strong>JSON (JavaScript Object Notation)</strong> is a format used to send and receive data. 
+    When we fetch data from an API, it often comes in JSON format. We need to parse it to use it in our code:
+</p>
+<pre>
+<code>
+const jsonString = '{"name": "John", "age": 30}';
+const data = JSON.parse(jsonString);
+console.log(data.name); // Output: John
+</code>
+</pre>
+
+<h2 id="demo-dynamic">Demo Dynamic Fetch</h2>
+<p>
+    You can use the <strong>fetch</strong> API dynamically, allowing you to make requests based on user input or other dynamic factors.
+    For example, fetching user information dynamically:
+</p>
+<pre>
+<code>
+const userId = '123';
+fetch(`https://api.example.com/users/${userId}`)
+    .then(response => response.json())
+    .then(user => console.log(user.name));
+</code>
+</pre>
+
+<h2 id="deconstruct-parameters">Deconstruct Parameters</h2>
+<p>
+    <strong>Deconstructing parameters</strong> means breaking down an object into its individual parts. 
+    It is useful when working with API data. Here’s an example:
+</p>
+<pre>
+<code>
+const user = {name: 'Alice', age: 25};
+const { name, age } = user;
+console.log(name); // Output: Alice
+console.log(age);  // Output: 25
+</code>
+</pre>
+
+<h2 id="fetch-github-issues">Fetch GitHub Issues</h2>
+<p>
+    GitHub has its own API to get issues from a repository. You can fetch GitHub issues like this:
+</p>
+<pre>
+<code>
+fetch('https://api.github.com/repos/username/repo-name/issues')
+    .then(response => response.json())
+    .then(issues => console.log(issues));
+</code>
+</pre>
+
+<h2 id="ispalindrome">isPalindrome Algorithm</h2>
+<p>
+    A <strong>palindrome</strong> is a word or phrase that reads the same forward and backward. 
+    This function checks if a given string is a palindrome:
+</p>
+<pre>
+<code>
+function isPalindrome(str) {
+    const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return cleaned === cleaned.split('').reverse().join('');
+}
+
+console.log(isPalindrome('madam')); // Output: true
+</code>
+</pre>
+
+<h2 id="factorial">Factorial Algorithm</h2>
+<p>
+    The <strong>factorial</strong> of a number is the product of all positive integers up to that number. 
+    Here’s how you calculate the factorial:
+</p>
+<pre>
+<code>
+function factorial(n) {
+    if (n === 0) return 1;
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // Output: 120
+</code>
+</pre>
+
+<h2 id="titlecase">titleCase Algorithm</h2>
+<p>
+    The <strong>titleCase</strong> function capitalizes the first letter of each word in a string:
+</p>
+<pre>
+<code>
+function titleCase(str) {
+    return str.toLowerCase().split(' ').map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+console.log(titleCase('hello world')); // Output: Hello World
+</code>
+</pre>
+
+<h2 id="how-to-use">How to Use</h2>
+<p>
+    To use this project, simply copy the code examples and run them in your JavaScript-enabled environment. 
+    You can test these in any modern browser, or use Node.js to run the code.
+</p>
+
+<!-- <h2 id="resources">Resources</h2>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">MDN Web Docs - Fetch API</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">MDN Web Docs - JSON.parse</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">MDN Web Docs - JavaScript Functions</a></li>
+    <li><a href="https://docs.github.com/en/rest/issues/issues">GitHub API - Fetch Issues</a></li>
+</ul> -->
+
+</body>
+</html>

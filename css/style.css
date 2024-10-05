@@ -88,7 +88,7 @@ img {
 
 /* Navbar Styles */
 header {
-  display: flex;
+  display: inherit;
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: var(--secondary-bg-color);

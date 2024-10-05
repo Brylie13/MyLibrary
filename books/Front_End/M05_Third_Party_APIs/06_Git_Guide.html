@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - Third-Party APIs and Simple Coding Tasks</title>
+</head>
+<body>
+
+<h1>Third-Party APIs </h1>
+
+<p>This guide explains third-party APIs and basic coding examples in a simple way. You will learn about click events, event delegation, Bootstrap, and some basic coding tasks like FizzBuzz, maxnum, and counting vowels.</p>
+
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#click-events">Click Events</a></li>
+    <li><a href="#event-delegation">Event Delegation</a></li>
+    <li><a href="#bootstrap-layout">Bootstrap Layout</a></li>
+    <li><a href="#bootstrap-utilities">Bootstrap Utilities</a></li>
+    <li><a href="#jquery-ui">jQuery UI</a></li>
+    <li><a href="#fizzbuzz">FizzBuzz</a></li>
+    <li><a href="#maxnum">Maxnum</a></li>
+    <li><a href="#vowel-count">Vowel Count</a></li>
+</ul>
+
+<h2 id="click-events">Click Events</h2>
+<p>Click events let you do something when someone clicks a button or part of your webpage. When you use click events, you are making your page interactive. Here’s an example of using a click event in HTML:</p>
+
+<pre>
+<code>
+<button onclick="alert('Button clicked!')">Click Me!</button>
+</code>
+</pre>
+
+<h2 id="event-delegation">Event Delegation</h2>
+<p>Event delegation is a way to listen for events on a parent element and handle them for its child elements. This saves time and is more efficient, especially for a large number of elements. Here is an example:</p>
+
+<pre>
+<code>
+<div id="parent">
+    <button>Child Button 1</button>
+    <button>Child Button 2</button>
+</div>
+
+<script>
+document.getElementById('parent').addEventListener('click', function(event) {
+    if(event.target.tagName === 'BUTTON') {
+        alert('A button was clicked!');
+    }
+});
+</script>
+</code>
+</pre>
+
+<h2 id="bootstrap-layout">Bootstrap Layout</h2>
+<p>Bootstrap is a popular library for making responsive websites. It uses a grid system that helps you create layouts quickly. Here's a simple example of a Bootstrap layout with two columns:</p>
+
+<pre>
+<code>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            Column 1
+        </div>
+        <div class="col-sm">
+            Column 2
+        </div>
+    </div>
+</div>
+</code>
+</pre>
+
+<h2 id="bootstrap-utilities">Bootstrap Utilities</h2>
+<p>Bootstrap also provides many utility classes, like classes for text alignment, margins, and padding. You can use these to style your website quickly. Here's an example using some Bootstrap utilities:</p>
+
+<pre>
+<code>
+<p class="text-center text-primary">This is a centered, blue paragraph.</p>
+<div class="m-5 p-5">This div has large margins and padding.</div>
+</code>
+</pre>
+
+<h2 id="jquery-ui">jQuery UI</h2>
+<p>jQuery UI is a set of tools that helps make your website more interactive. You can add features like drag and drop, sliders, or date pickers. Here's an example of a jQuery UI date picker:</p>
+
+<pre>
+<code>
+<input type="text" id="datepicker">
+<script>
+    $( "#datepicker" ).datepicker();
+</script>
+</code>
+</pre>
+
+<h2 id="fizzbuzz">FizzBuzz</h2>
+<p>FizzBuzz is a common coding problem. The task is to print numbers from 1 to 100, but for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz". Here's a simple example in JavaScript:</p>
+
+<pre>
+<code>
+for(let i = 1; i <= 100; i++) {
+    if(i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz');
+    } else if(i % 3 === 0) {
+        console.log('Fizz');
+    } else if(i % 5 === 0) {
+        console.log('Buzz');
+    } else {
+        console.log(i);
+    }
+}
+</code>
+</pre>
+
+<h2 id="maxnum">Maxnum</h2>
+<p>This task finds the maximum number from a list of numbers. Here's how you can find the largest number in a list using JavaScript:</p>
+
+<pre>
+<code>
+let numbers = [1, 45, 3, 78, 2, 56];
+let maxNumber = Math.max(...numbers);
+console.log('Max number is: ' + maxNumber);
+</code>
+</pre>
+
+<h2 id="vowel-count">Vowel Count</h2>
+<p>This task counts the number of vowels (a, e, i, o, u) in a given word or sentence. Here's an example in JavaScript:</p>
+
+<pre>
+<code>
+function countVowels(str) {
+    let vowels = 'aeiouAEIOU';
+    let count = 0;
+    for(let i = 0; i < str.length; i++) {
+        if(vowels.indexOf(str[i]) !== -1) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countVowels('This is a simple sentence.'));
+</code>
+</pre>
+
+</body>
+</html>

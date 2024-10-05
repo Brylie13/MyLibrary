@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+
+<h1>JavaScript Basics</h1>
+
+<p>
+    This project explains key JavaScript topics like conditional statements, iteration, functions, scope, 
+    objects, and basic arithmetic. It includes examples to help you understand how to use JavaScript with HTML forms.
+</p>
+
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#conditional-statements">Conditional Statements</a></li>
+    <li><a href="#iteration">Iteration (Loops)</a></li>
+    <li><a href="#functions">Functions</a></li>
+    <li><a href="#scope">Scope</a></li>
+    <li><a href="#object-this">Object and This</a></li>
+    <li><a href="#arithmetic">Basic Arithmetic (Lognums and OddEven)</a></li>
+</ul>
+
+<h2 id="conditional-statements">Conditional Statements</h2>
+<p>
+    <strong>Conditional statements</strong> let us run different code depending on conditions. For example, 
+    we use <code>if</code> and <code>else</code> to check if something is true or false.
+</p>
+<pre>
+<code>
+<script>
+    let num = 10;
+
+    if (num > 5) {
+        console.log("The number is greater than 5");
+    } else {
+        console.log("The number is 5 or less");
+    }
+</script>
+</code>
+</pre>
+
+<h2 id="iteration">Iteration (Loops)</h2>
+<p>
+    <strong>Iteration</strong> means repeating something over and over. In JavaScript, we use <code>for</code> or <code>while</code> loops to run the same code many times.
+</p>
+<pre>
+<code>
+<script>
+    for (let i = 1; i <= 5; i++) {
+        console.log("Counting: " + i);
+    }
+</script>
+</code>
+</pre>
+
+<h2 id="functions">Functions</h2>
+<p>
+    A <strong>function</strong> is a block of code that we can use again and again. We define it with <code>function</code> and call it by its name.
+</p>
+<pre>
+<code>
+<script>
+    function sayHello(name) {
+        console.log("Hello, " + name + "!");
+    }
+
+    sayHello("Alice");
+</script>
+</code>
+</pre>
+
+<h2 id="scope">Scope</h2>
+<p>
+    <strong>Scope</strong> refers to where a variable can be used in your code. Variables can have global or local scope.
+</p>
+<pre>
+<code>
+<script>
+    let globalVar = "I am global";
+
+    function checkScope() {
+        let localVar = "I am local";
+        console.log(globalVar); // Works
+        console.log(localVar);  // Works
+    }
+
+    checkScope();
+    console.log(localVar);  // Error, localVar is not available here
+</script>
+</code>
+</pre>
+
+<h2 id="object-this">Object and This</h2>
+<p>
+    An <strong>object</strong> is a collection of data and actions (called methods). The <strong>this</strong> keyword refers to the object it belongs to.
+</p>
+<pre>
+<code>
+<script>
+    let car = {
+        make: "Toyota",
+        model: "Corolla",
+        showInfo: function() {
+            console.log("Car: " + this.make + " " + this.model);
+        }
+    };
+
+    car.showInfo();  // Output: Car: Toyota Corolla
+</script>
+</code>
+</pre>
+
+<h2 id="arithmetic">Basic Arithmetic (Lognums and OddEven)</h2>
+<p>
+    JavaScript can also do arithmetic, like adding numbers or checking if a number is even or odd.
+</p>
+<h3>Lognums</h3>
+<p>To log numbers (print them in the console), we use <code>console.log()</code>:</p>
+<pre>
+<code>
+<script>
+    console.log(1 + 1);  // Output: 2
+    console.log(5 * 2);  // Output: 10
+</script>
+</code>
+</pre>
+
+<h3>OddEven</h3>
+<p>To check if a number is odd or even:</p>
+<pre>
+<code>
+<script>
+    function checkOddEven(number) {
+        if (number % 2 === 0) {
+            console.log(number + " is even");
+        } else {
+            console.log(number + " is odd");
+        }
+    }
+
+    checkOddEven(7);  // Output: 7 is odd
+    checkOddEven(4);  // Output: 4 is even
+</script>
+</code>
+</pre>
+
+<h2>HTML Form Example</h2>
+<p>Here’s how to create a simple form with HTML:</p>
+<pre>
+<code>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+</code>
+</pre>
+
+</body>
+</html>

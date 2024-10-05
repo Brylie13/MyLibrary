@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - Web APIs</title>
+</head>
+<body>
+    <h1>Web APIs Overview</h1>
+    <p>
+        This project explains the basics of <strong>Web APIs</strong> using simple HTML examples. 
+        You will learn how to use event listeners, timers, data attributes, local storage, and some basic functions.
+    </p>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#create">Creating and Appending Elements</a></li>
+        <li><a href="#event">Event Listeners</a></li>
+        <li><a href="#timers">Timers and Intervals</a></li>
+        <li><a href="#data">Data Attributes</a></li>
+        <li><a href="#local">Local Storage</a></li>
+        <li><a href="#functions">Example Functions</a></li>
+    </ul>
+
+    <h2 id="create">1. Creating and Appending Elements</h2>
+    <p>Use Web APIs to create new HTML elements and add them to the page:</p>
+    <pre>
+        <code>
+&lt;div id="container">&lt;/div>
+
+&lt;script>
+  const newElement = document.createElement("p");
+  newElement.textContent = "This is a new paragraph!";
+  document.getElementById("container").appendChild(newElement);
+&lt;/script>
+        </code>
+    </pre>
+
+    <h2 id="event">2. Event Listeners</h2>
+    <p>Add event listeners to HTML elements to respond to user actions:</p>
+    <pre>
+        <code>
+&lt;button id="myButton">Click Me!&lt;/button>
+
+&lt;script>
+  const button = document.getElementById("myButton");
+  button.addEventListener("click", function() {
+    alert("Button was clicked!");
+  });
+&lt;/script>
+        </code>
+    </pre>
+
+    <h2 id="timers">3. Timers and Intervals</h2>
+    <p>Create a countdown timer using setInterval:</p>
+    <pre>
+        <code>
+&lt;button id="startTimer">Start Countdown&lt;/button>
+&lt;p id="countdown">&lt;/p>
+
+&lt;script>
+  document.getElementById("startTimer").addEventListener("click", function() {
+    let timeLeft = 10;
+    const timer = setInterval(function() {
+      document.getElementById("countdown").textContent = timeLeft + " seconds remaining";
+      timeLeft--;
+
+      if (timeLeft < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").textContent = "Time's up!";
+      }
+    }, 1000);
+  });
+&lt;/script>
+        </code>
+    </pre>
+
+    <h2 id="data">4. Data Attributes</h2>
+    <p>Use data attributes to store extra information inside HTML elements:</p>
+    <pre>
+        <code>
+&lt;button data-color="blue" id="colorButton">Get Button Color&lt;/button>
+
+&lt;script>
+  const button = document.getElementById("colorButton");
+  button.addEventListener("click", function() {
+    const color = button.getAttribute("data-color");
+    alert("The button's color is: " + color);
+  });
+&lt;/script>
+        </code>
+    </pre>
+
+    <h2 id="local">5. Local Storage</h2>
+    <p>Store data in the browser's local storage to keep it even after the page refreshes:</p>
+    <pre>
+        <code>
+&lt;input type="text" id="nameInput" placeholder="Enter your name">
+&lt;button id="saveName">Save Name&lt;/button>
+&lt;p id="displayName">&lt;/p>
+
+&lt;script>
+  document.getElementById("saveName").addEventListener("click", function() {
+    const name = document.getElementById("nameInput").value;
+    localStorage.setItem("savedName", name);
+    document.getElementById("displayName").textContent = "Saved Name: " + name;
+  });
+
+  window.onload = function() {
+    const savedName = localStorage.getItem("savedName");
+    if (savedName) {
+      document.getElementById("displayName").textContent = "Saved Name: " + savedName;
+    }
+  };
+&lt;/script>
+        </code>
+    </pre>
+
+    <h2 id="functions">6. Example Functions</h2>
+
+    <h3>Sum Array</h3>
+    <p>A simple function to add all numbers in an array:</p>
+    <pre>
+        <code>
+&lt;script>
+  function sumArray(arr) {
+    return arr.reduce((total, num) => total + num, 0);
+  }
+
+  const result = sumArray([1, 2, 3, 4]);
+  console.log(result); // Outputs 10
+&lt;/script>
+        </code>
+    </pre>
+
+    <h3>Log Even Numbers</h3>
+    <p>A function that logs only even numbers from an array:</p>
+    <pre>
+        <code>
+&lt;script>
+  function logEvenNumbers(arr) {
+    arr.forEach(num => {
+      if (num % 2 === 0) {
+        console.log(num);
+      }
+    });
+  }
+
+  logEvenNumbers([1, 2, 3, 4, 5, 6]); // Outputs 2, 4, 6
+&lt;/script>
+        </code>
+    </pre>
+
+    <h3>Countdown</h3>
+    <p>A simple countdown function:</p>
+    <pre>
+        <code>
+&lt;script>
+  function countdown(num) {
+    let timer = setInterval(function() {
+      console.log(num);
+      num--;
+      if (num < 0) {
+        clearInterval(timer);
+        console.log("Time's up!");
+      }
+    }, 1000);
+  }
+
+  countdown(5); // Starts countdown from 5
+&lt;/script>
+        </code>
+    </pre>
+
+</body>
+</html>

@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "06-Git-Guide.html",
         "07-Challenge.html",
         "08-Module-Project.html",
-        "09-Recordings.html",
         "10-Quiz.html",
       ],
       M02_Advanced_CSS: [
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "06-Git-Guide.html",
         "07-Challenge.html",
         "08-Module-Project.html",
-        "09-Recordings.html",
         "10-Quiz.html",
       ],
       M03_JavaScript: [
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "03_Bootstrap_Layout.html",
         "04_Bootstrap_Utilities.html",
         "05_jQuery_UI.html",
-        "06_Git-Guide.html",
+        "06_Git_Guide.html",
         "07_Challenge.html",
         "08_Algorithums.html",
         "08_Algorithums2.html",

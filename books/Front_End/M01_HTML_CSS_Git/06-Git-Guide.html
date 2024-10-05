@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - HTML, CSS, GitHub, နှင့် Git လမ်းညွှန်</title>
+</head>
+<body>
+
+<h1>HTML, CSS, GitHub </h1>
+
+<p>
+    This project explains the basics of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>GitHub</strong>, and shows how to use <strong>Git</strong> to track changes to your code. It has example code and simple steps to help you start building websites and managing projects with <strong>Git</strong> and <strong>GitHub</strong>.
+</p>
+
+<h2>List of Sections</h2>
+<ul>
+    <li><a href="#html">HTML</a></li>
+    <li><a href="#css">CSS</a></li>
+    <li><a href="#github">GitHub</a></li>
+    <li><a href="#git-guide">Git Guide</a></li>
+    <li><a href="#how-to-use">How to use</a></li>
+    <li><a href="#resources">Resources</a></li>
+</ul>
+
+<h2 id="html">HTML</h2>
+<p>
+    <strong>HTML (Hypertext Markup Language)</strong> is the main language used to make web pages. It uses tags to organize the content on a page. Here is a simple example of HTML code:
+</p>
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage!&lt;/p&gt;
+    &lt;p&gt;HTML allows us to structure content effectively.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<h3><strong>Key HTML Concepts</strong></h3>
+<ul>
+    <li><strong>HTML tags</strong> define parts of a webpage, like <code>&lt;h1&gt;</code> for titles and <code>&lt;p&gt;</code> for paragraphs.</li>
+    <li>The file starts with <strong><code>&lt;!DOCTYPE html&gt;</code></strong> to show which version of HTML is used.</li>
+    <li>Common parts include <code>&lt;a&gt;</code> for links, <code>&lt;img&gt;</code> for images, and <code>&lt;div&gt;</code> for sections of the page.</li>
+</ul>
+
+<h2 id="css"><strong>CSS</strong></h2>
+<p>
+    <strong>CSS (Cascading Style Sheets)</strong> is used to make HTML content look better. CSS helps you set styles like fonts, 
+    colors, and layouts to make your webpage look nice. Here is a simple example of a CSS file:
+</p>
+<pre>
+<code>
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+</code>
+</pre>
+
+<h3><strong>Key CSS Concepts</strong></h3>
+<ul>
+    <li><strong>CSS selectors</strong> (like <code>body</code>, <code>h1</code>) choose which parts of the HTML to style.</li>
+    <li>Each rule has a <strong>property</strong> (like <code>color</code>) and a <strong>value</strong> (like "red").</li>
+    <li>CSS can be in its own file (called external), inside the HTML file (called internal), or in the HTML tags (called inline).</li>
+</ul>
+
+<h2 id="github"><strong>GitHub</strong></h2>
+<p>
+    <strong>GitHub</strong> is a website where you can save your code and work with others on projects. It uses 
+    <strong>Git</strong>, which is a tool to track changes to code. Here are some common GitHub commands for working with code:
+</p>
+<pre>
+<code>
+# Start a new Git project
+git init
+
+# Add files to save
+git add .
+
+# Save changes with a message
+git commit -m "first changes"
+
+# Connect to a GitHub repository
+git remote add origin https://github.com/username/repo-name.git
+
+# Upload your changes to GitHub
+git push origin main
+</code>
+</pre>
+
+
+<h2 id="git-guide">Git Guide</h2>
+<p>
+    <strong>Git</strong> is a tool that helps track changes to files. Here are some common Git commands used when writing software.
+</p>
+<h3>1. Initialize a Git Repository</h3>
+<pre>
+<code>
+git init
+</code>
+</pre>
+<p>This command creates a new Git repository in your project folder.</p>
+
+<h3>2. Add Files to Staging</h3>
+<p>After modifying files, add them to the staging area</p>
+<pre>
+<code>
+git add <file>
+</code>
+</pre>
+<p>Or add all files</p>
+<pre>
+<code>
+git add .
+</code>
+</pre>
+<p>Then commit your changes with a message</p>
+<pre>
+<code>
+    git commit -m "Your commit message"
+</code>
+</pre>
+
+<h3>3. Branching</h3>
+<p>Create a new branch to work on a feature separately:</p>
+<pre>
+<code>
+git branch new-feature
+git checkout new-feature
+</code>
+</pre>
+
+<h3>4. Merging Branches</h3>
+<p>Once a feature is completed, merge it into the main branch:</p>
+<pre>
+<code>
+git checkout main
+git merge new-feature
+</code>
+</pre>
+
+<h3>5. Pushing to GitHub</h3>
+<p>To push your code to GitHub, add the remote repository:</p>
+<pre>
+<code>
+git remote add origin https://github.com/username/repo-name.git
+</code>
+</pre>
+<p>Then push to the main branch:</p>
+<pre>
+<code>
+git push origin main
+</code>
+</pre>
+
+<h3>6. Cloning a Repository</h3>
+<p>To clone a repository from GitHub to your local machine:</p>
+<pre>
+<code>
+git clone https://github.com/username/repo-name.git
+</code>
+</pre>
+
+
+<h2 id="how-to-use">How to Use</h2>
+<p>
+    This project covers the basics of HTML, CSS, Git, and GitHub to help you start with building websites and managing code. Follow the steps and commands provided to create, manage, and work on your projects with others.
+</p>
+
+<h2 id="resources">Resources</h2>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs - HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub">MDN Web Docs - GitHub</a></li>
+    <li><a href="https://github.com/">GitHub Official Website</a></li>
+</ul>
+
+</body>
+</html>
